@@ -9,8 +9,9 @@ Este projeto implementa um sistema de autenticação de usuários e CRUD (Create
 Essa estrutura orientará seus alunos na implementação de uma solução robusta para autenticação e autorização em sistemas CRUD.
 
 ### Documentação
-Para mais detalhes, consulte a [documentação do Varela]([https://flask.palletsprojects.com/](https://github.com/prof-varela/2024-tri2-ia22-autenticacao)).
-E este é um link para o [tutorial do CRUDE]([https://flask.palletsprojects.com/]https://github.com/prof-varela/tutoriais/blob/main/tutorial/crud-simples-monoservidor-nodejs-typescript-express-sqlite.md).
+Para mais detalhes, consulte a documentação do Varela: (https://github.com/prof-varela/2024-tri2-ia22-autenticacao).
+
+E este é um link para o tutorial do CRUDE:(https://github.com/prof-varela/tutoriais/blob/main/tutorial/crud-simples-monoservidor-nodejs-typescript-express-sqlite.md).
 
 ## 1. Cadastro e Login
 
@@ -97,6 +98,4 @@ Exemplo de restrição de edição:
 def editar_usuario(id):
     if session['user_id'] != id:
         return jsonify({"message": "Você não tem permissão para editar este usuário!"}), 403
-
-    # Lógica para editar o usuário logado
 ````
